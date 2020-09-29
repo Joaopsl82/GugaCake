@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+div.menu-desktop{
+    width: 100%;
+    height: 100px;
+    background-color: rebeccapurple;
+    padding: 0 5%;
+}
+
+nav.nav-desktop{
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+nav.nav-desktop ul li{
+    float: left;
+    padding: 0 15px;
+    list-style-type: none;
+}
+
+nav.nav-desktop ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-desktop ul li a:hover{
+    color: white;
+}
+
+div.banner{
+    height: 13%;
+    background-image: url('../img/banner.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*Começo intro*/
+
+section .intro{
+    height: 100%;
+    width: 100%;
+    background: rebeccapurple;
+}
+
+section div.flex{
+    display: flex;
+}
+
+section div.intro-text{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+section div.intro-text h2{
+    color: white;
+    font-size: 45px;
+    line-height: 3rem;
+    padding: 0 2%;
+    font-style: italic;
+}
+
+section div.intro-text p{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+section div.intro-text input[type="submit"]{
+    margin-top: 20px;
+    padding: 4px 5%;
+    background-color: purple;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+section div.intro-text input[type="submit"]:hover{
+    color: black;
+}
+
+/*Fim intro*/
+
+/*Começo intro-prod*/
+section .intro-prod{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+section .intro-prod .container{
+    height: auto;
+}
+
+section div.intro-prod-text{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+section div.intro-prod-text h2{
+    color: black;
+    padding: 0 2%;
+    font-size: 30px;
+    text-align: left;
+    
+}
+
+section div.intro-prod-text p{
+    color: black;
+    text-align: left;
+    padding: 10px 2%;
+}
+
+section div.intro-prod-text input[type=submit]{
+    margin-top: 20px;
+    padding: 4px 5%;
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 270px;
+    text-transform: uppercase;
+}
+
+section div.intro-prod-text input[type=submit]:hover{
+    color: black;
+}
+/*Fim intro-prod*/
+
+/*Comçeo intro-lancamento*/
+
+section .intro-lancamento{
+    height: 100%;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+section .intro-lancamento-text{
+    width: 50%;
+    padding: 2%;
+    margin-top: 70px;
+}
+
+section .intro-lancamento-text h2{
+    color: white;
+    padding: 0 2%;
+    text-align: left;
+    font-style: italic;
+}
+
+section .intro-lancamento-text p{
+    margin-top: 30px;
+    padding: 0 2%;
+    color: white;
+    font-style: italic;
+    font-size: 17px;
+}
+
+section .intro-lancamento-text input[type=submit]{
+    padding: 7px 15%;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+section .intro-lancamento-text input[type=submit]:hover{
+    color: black;
+}
+
+section .intro-lancamento-img{
+    margin-top: 50px;
+}
+/*Fim intro-lancamento*/
+
+/*Começo intro-franqueado*/
+section .intro-franqueado{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+section .intro-franqueado-img{
+    width: 50%;
+    padding: 0 2%;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+section .intro-franqueado-text p{
+    margin-top: 130px;
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+section .intro-franqueado-text input[type=submit]{
+    padding: 7px 15%;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-transform: uppercase;
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+section .intro-franqueado-text input[type=submit]:hover{
+    color: black;
+}
+/*Fim intro-franqueado*/
+
+/*Começo footer*/
+footer .intro-footer{
+    width: 100%;
+    height: 60px;
+    background-color: rebeccapurple;
+}
+
+footer .footer-text p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Fim footer*/

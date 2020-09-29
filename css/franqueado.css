@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*Inicio intro-franqueado*/
+section div.intro-franqueado{
+    width: 100%;
+    height: 100%;
+    background: rebeccapurple;
+}
+
+section div.flex{
+    display: flex;
+}
+
+section div.intro-text-franqueado{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+section div.intro-text-franqueado h2{
+    color: white;
+    font-size: 35px;
+    line-height: 3rem;
+    padding: 0 2%;
+    text-align: justify;
+}
+
+section div.intro-text-franqueado p{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+section div.intro-text-franqueado input[type="submit"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 500px;
+    padding: 4px 5%;
+    background-color: purple;
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+section div.intro-text-franqueado input[type="submit"]:hover{
+    color: black;
+}
+
+section div.intro-img-franqueado{
+    border: 15px solid rebeccapurple;
+    padding: 50px;
+    background-image: url('../img/bariloche-com-morangos-1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*Fim intro-franqueado*/
+
+/*Inicio parcerias*/
+    section div.parcerias{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    section div.parcerias-text{
+        float: left;
+        margin-right: 20px;
+    }
+
+    section div.parcerias-text p{
+        font-size: 20px;
+        color: black;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    section div.parcerias-img ul li{
+        float: left;
+        padding: 5px 25px;
+        list-style: none;
+    }
+/*Fim parcerias*/
+
+/*Inicio qualidades*/
+    section div.qualidades{
+        width: 100%;
+        height: 100%;
+        background: pink;
+        padding: 50px;
+    }
+
+    section div.banner-qualidades{
+        display: flex;
+        background: white;
+        padding: 3px solid;
+    }
+
+    section div.banner-qualidades .premiada{
+        border: 5px solid pink;
+    }
+
+    section div.qualidades-text h1{
+        font-size: 25px;
+        font-style: italic;
+        padding: 20px;
+        text-align: center;
+    }
+
+    section div.qualidade-text > p{
+        padding: 30px;
+    }
+
+    section div.premiada h4, p{
+        padding: 3px 5%;
+        text-align: center;
+    }
+
+    section div.premiada h4{
+        font-size: 25px;
+    }
+
+    section div.premiada .img1{
+        margin-left: 30px;
+    }
+
+    section div.premiada .img2{
+        margin-left: 50px;
+    }
+/*Fim qualidades*/

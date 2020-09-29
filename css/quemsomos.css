@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*Inicio quemSomos*/
+
+section div.quemSomos{
+    height: 100%;
+    background-image: url('../img/quemSomos.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section div.quemSomos-text p{
+    text-align: justify;
+    width: 50%;
+    padding: 70px 5% 50px 5%;
+    color: white;
+
+}
+
+section div.quemSomos-text h1{
+    width: 50%;
+    padding: 0px 5% 30px 5%;
+    color: white;
+}
+
+/*Fim quemSomos*/
+
+/*Inicio produtosNaturais*/
+section div.produtosNaturais{
+    height: 100%;
+    background-image: url('../img/BG_produtos-naturais.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+section div.produtosNaturais-text{
+    text-align: right;
+    padding: 70px;
+}
+
+section div.produtosNaturais-text h1{
+    padding: 0 2%;
+    text-align: right;
+    margin-right: 90px;
+    color: rebeccapurple;
+    font-size: 40px;
+}
+
+section div.produtosNaturais-text p{
+    justify-content: right;
+    max-width: 400px;
+    text-align: left;
+    margin-left: 58%;
+    padding: 2% 3%;
+    font-size: 19px;
+}
+
+section div.produtosNaturais-text input[type=submit]{
+    margin-top: 10px;
+    margin-right: 125px;
+    padding: 4px 5%;
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section div.produtosNaturais-text input[type=submit]:hover{
+    color: black;
+}
+
+/*Fim produtosNaturais*/
+
+/*Inicio text-franqueado*/
+section div.franqueado{
+    width: 100%;
+    height: 100px;
+    background: rebeccapurple;
+}
+
+section div.text-franqueado{
+    text-align: center;
+    padding: 25px;
+}
+
+section div.text-franqueado p{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+/*Fim text-franqueado*/
+
+/*Inicio cadastro*/
+    section div.cadastro-button{
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    section div.cadastro-button input[type=submit]{
+        padding: 10px 20px;
+        font-size: 30px;
+        border: none;
+        color: white;
+        background-color: rebeccapurple;
+        font-weight: 100;
+        font-style: italic;
+        cursor: pointer;
+    }
+
+    section div.cadastro-button input[type=submit]:hover{
+        color: black;
+    }
+
+    section div.cadastro-text p{
+        font-size: 14px;
+        padding-bottom: 40px;
+    }
+/*Fim cadasto*/

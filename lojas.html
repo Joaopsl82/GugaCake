@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lojas.css">
+    <link rel="icon" href="img/icone.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site informativo de bolos">
+    <meta name="keywords" content="bolos, GugaCake, cupons, informação">
+    <meta name="author" content="Q&Q">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guga Cake</title>
+</head>
+<body>
+    <div class="menu-desktop">
+        <div class="container">
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="lojas.html" style="color: white;">Lojas</a></li>
+                    <li><a href="sejafranqueado.html">Seja um Franqueado</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav><!--nav-desktop-->
+        </div><!--container-->
+    </div><!--menu-desktop-->
+
+    <div class="menu-mobile">
+        <nav class="nav-mobile">
+        </nav><!--nav-mobile-->
+    </div><!--menu-mobile-->
+
+    <div class="banner"></div><!--banner-->
+
+    <section>
+        <div class="banner-text">
+            <div class="container">
+                <div class="area-text">
+                    <div class="text">
+                        <h1>Lojas GugaCake</h1>
+                        <p>
+                            Já bastante populares na cidade de São Paulo, onde há
+                            sempre por perto uma loja de bolos caseiros saindo do forno,
+                            as lojas GugaCake vêm cada vez mais ganhando o país (agora
+                            presentes no Rio de Janeiro, Santa Catarina, Paraná e Espírito
+                            Santo). E se sua região ainda não tem uma GugaCake, aqui vai 
+                            uma boa notícia: novas lojas vêm por aí para adoçar o dia de
+                            milhares de apaizonados por bolos.
+                        </p>
+                    </div><!--text-->
+                </div><!--area-text-->
+            </div><!--container-->
+        </div><!--banner-text-->
+        <div class="clear"></div><!--clear-->
+    </section>
+
+    <section>
+        <div class="lojas-cid">
+            <div class="central">
+                <div class="list-cid">
+                    <ul>
+                        <li>All</li>
+                        <li>ES</li>
+                        <li>PR</li>
+                        <li>RJ</li>
+                        <li>SC</li>
+                        <li>SP</li>
+                        <li>TO</li>
+                    </ul>
+                </div><!--list-cid-->
+            </div><!--central-->
+        </div><!--lojas-cid-->
+        <div class="clear"></div><!--clear-->
+    </section>
+
+    <section>
+        <div class="mapa">
+            <div class="container">
+                <div class="mapas-text">
+                    <h1>Veja onde nossas lojas ficam localizadas!</h1>
+                </div><!--mapas-test-->
+                <div id="map"> </div>
+				<script src="./js/apiMaps.js"></script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdtOdPsShEVo1wNYVxp1iSK0S4UzUFmvI&callback=iniciarMap"></script>
+            </div><!--container-->
+        </div><!--mapa-->
+    </section>
+
+    <footer>
+        <div class="intro-footer">
+            <div class="container">
+                <div class="footer-text">
+                    <p>GugaCake - Todos os direitos reservados</p>
+                </div><!--footer-text-->
+            </div><!--container-->
+        </div><!--intro-footer-->
+    </footer>
+</body>
+</html>
