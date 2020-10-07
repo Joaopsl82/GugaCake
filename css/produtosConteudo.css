@@ -124,6 +124,13 @@ section .intro-produto-img{
 @media screen and (max-width: 720px){
     img.valor-nutricional-img{
 		width: 300px;
-		height: 300px;
-	}
+        height: 300px;
+        margin-left: 15%;
+    }
+    
+    .dimensao-bolo{
+        width: 350px;
+        height: 350px;
+        margin-left: 15%;
+    }
 }
