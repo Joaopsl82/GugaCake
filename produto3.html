@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/produtosConteudo.css">
-    <link rel="icon" href="img/icone.png">
+    <link rel="icon" href="img/icone.jpeg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site informativo de bolos">
@@ -16,6 +16,7 @@
 <body>
     <div class="menu-desktop">
         <div class="container">
+            <div class="img"><img src="img/Logo.jpeg" style="width: 250px;float: left;margin-top: -62px;"></div>
             <nav class="nav-desktop">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -31,8 +32,18 @@
     <div class="clear"></div><!--clear-->
 
     <div class="menu-mobile">
-        <nav class="nav-mobile">
-        </nav><!--nav-mobile-->
+        <div class="container">
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="lojas.html">Lojas</a></li>
+                    <li><a href="sejafranqueado.html">Seja um Franqueado</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav><!--nav-mobile-->
+        </div><!--container-->
     </div><!--menu-mobile-->
 
     <div class="banner"></div><!--banner-->
@@ -65,7 +76,7 @@
                 <div class="valor-nutricional-text">
                     <h1>Informações Nutricionais</h1>
                     <p>Porção 60G (1 fatia)</p>
-                    <img src="img/tabela-nutricional.PNG"><br>
+                    <img class="valor-nutricional-img" src="img/tabela-nutricional.PNG"><br>
                     <span>(*) Valores Diários de Referência com base em uma dieta de 2.000 kcal ou 8.400 kj. 
                         Seus valores diários podem <br> ser maiores ou menores dependendo de suas necessidades. <br>
                         (**) %VD não estabelecido. Informação Nutricional baseada nas Resoluções da ANVISA: 
@@ -84,5 +95,8 @@
             </div><!--container-->
         </div><!--intro-footer-->
     </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/responsivo.js"></script>
 </body>
 </html>

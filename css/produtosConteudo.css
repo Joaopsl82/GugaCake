@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body, html {
@@ -32,7 +32,7 @@ section .intro-produto-text{
 }
 
 section .intro-produto-text h2{
-    color: rebeccapurple;
+    color: #DB1D45;
     padding: 0 2%;
     text-align: left;
     font-style: italic;
@@ -46,7 +46,7 @@ section .intro-produto-text p{
 }
 
 section .intro-produto-text h3{
-    color: rebeccapurple;
+    color: #DB1D45;
     padding: 0px 2%;
     text-align: left;
     font-style: italic;
@@ -97,3 +97,33 @@ section .intro-produto-img{
         font-size: 10px;
     }
 /*Fim valor-nutricional*/
+
+@media screen and (max-width: 1000px){
+    section .intro-produto-text{
+        width: 100%;
+        padding: 2%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    section .valor-nutricional-text{
+        width: 100%;
+    }
+
+    section div.valor-nutricional-text h1,p{
+        text-align: center;
+    }
+
+    img.valor-nutricional-img{
+		width: 450px;
+		height: 450px;
+	}
+}
+
+@media screen and (max-width: 720px){
+    img.valor-nutricional-img{
+		width: 300px;
+		height: 300px;
+	}
+}

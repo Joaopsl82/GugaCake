@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/produto.css">
-    <link rel="icon" href="img/icone.png">
+    <link rel="icon" href="img/icone.jpeg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site informativo de bolos">
@@ -14,13 +14,14 @@
     <title>Guga Cake</title>
 </head>
 <body>
-    <div class="menu-desktop">
+    <div class="menu-desktop" style="z-index: 999;">
         <div class="container">
+            <div class="img"><img src="img/Logo.jpeg" style="width: 250px;float: left;margin-top: -62px;"></div>
             <nav class="nav-desktop">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="quemsomos.html">Quem somos</a></li>
-                    <li><a href="produtos.html" style="color: white;">Produtos</a></li>
+                    <li><a href="produtos.html" style="color: #DB1D45;">Produtos</a></li>
                     <li><a href="lojas.html">Lojas</a></li>
                     <li><a href="sejafranqueado.html">Seja um Franqueado</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -30,8 +31,18 @@
     </div><!--menu-desktop-->
 
     <div class="menu-mobile">
-        <nav class="nav-mobile">
-        </nav><!--nav-mobile-->
+        <div class="container">
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quemsomos.html">Quem somos</a></li>
+                    <li><a href="produtos.html" style="color:#DB1D45;">Produtos</a></li>
+                    <li><a href="lojas.html">Lojas</a></li>
+                    <li><a href="sejafranqueado.html">Seja um Franqueado</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav><!--nav-mobile-->
+        </div><!--container-->
     </div><!--menu-mobile-->
 
     <div class="banner"></div><!--banner-->
@@ -110,18 +121,18 @@
                 
                 <div class="vitrine-bolo">
                     <div class="vitrine-destaque">
-                        <div style="background-image:url('img/bariloche-com-morangos-2.png');" class="bolo-img"></div><!--bolo-img-->
+                        <div style="background-image:url('img/boloMorango.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
-                            <h2>Bariloche com Morangos</h2>
+                            <h2>Chocolate com Morangos</h2>
                             
                             <a class="btn1" href="produto1.html">Mais Detalhes</a>
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
                     <div class="vitrine-destaque">
-                        <div style="background-image:url('img/bolo_chocolate_2.png');" class="bolo-img"></div><!--bolo-img-->
+                        <div style="background-image:url('img/bolo_chocolate_2.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
-                            <h2>Bolo de chocolate Belga</h2>
+                            <h2>Chocolate Belga</h2>
                             
                             <a class="btn1" href="produto2.html">Mais Detalhes</a>
                         </div><!--info-carro-->
@@ -130,14 +141,14 @@
                     <div class="vitrine-destaque">
                         <div style="background-image:url('img/bolo_bem_casado.png');" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
-                            <h2>Bolo bem casado</h2>
+                            <h2>Bem casado</h2>
                             
                             <a class="btn1" href="produto3.html">Mais Detalhes</a>
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
                     <div class="vitrine-destaque">
-                        <div style="background-image:url('img/camafeu-de-nozes-1\ \(1\).png');" class="bolo-img"></div><!--bolo-img-->
+                        <div style="background-image:url('img/bolo-camafeu.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Camafeu com Nozes</h2>
                             
@@ -146,28 +157,28 @@
                     </div><!--vitrine-destaque-->
                 
                     <div class="vitrine-destaque">
-                        <div style="background-image:url('img/docura-de-morangos-1.png');" class="bolo-img"></div><!--bolo-img-->
+                        <div style="background-image:url('img/bolo-maracuja.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
-                            <h2>Docura de morangos</h2>
+                            <h2>Maracuja</h2>
                             
                             <a class="btn1" href="produto5.html">Mais Detalhes</a>
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
                     <div class="vitrine-destaque">
-                        <div style="background-image:url('img/bolo_chocolate.png');" class="bolo-img"></div><!--bolo-img-->
+                        <div style="background-image:url('img/bolo-trufado.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
-                            <h2>Bolo de chocolate suiço</h2>
+                            <h2>Trufado</h2>
                             
                             <a class="btn1" href="produto6.html">Mais Detalhes</a>
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
-                        </div><!--vitrine-venda-->
+                </div><!--vitrine-bolo-->
                 
                         <div class="clear"></div>
                         </div><!--container-->
-                    </div><!--content-venda-->
+                    </div><!--content-bolo-->
                 
                 </section><!--venda-->
             
@@ -186,5 +197,8 @@
             </div><!--container-->
         </div><!--intro-footer-->
     </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/responsivo.js"></script>
 </body>
 </html>

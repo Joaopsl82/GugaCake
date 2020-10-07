@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body, html {
@@ -24,7 +24,7 @@ section .produto{
     width: 100%;
 	height: 100%;
 	padding-bottom: 20px;
-    background-color: blueviolet;
+	background-image: url('../img/banner3.jpg');
 }
 
 section .produto-menu{
@@ -37,7 +37,7 @@ section .produto-menu h1{
     font-weight: normal;
     font-style: italic;
     padding: 10px;
-    color: white;
+    color: black;
 }
 
 section .produto-menu ul li{
@@ -46,11 +46,11 @@ section .produto-menu ul li{
     display: inline;
     padding: 20px;
     cursor: pointer;
-    color: white;
+    color: black;
 }
 
 section .produto-menu ul li:hover{
-    color: black;
+    color: #DB1D45;
 }
 /*Fim produto*/
 
@@ -75,14 +75,14 @@ section.produto-img{
 
 .search1 h2{
 	font-size: 24px;
-	color: white;
+	color: #DB1D45;
 	font-weight: normal;
 }
 
 .search1 .barra-preco{
 	width: 100%;
 	height: 20px;
-	background: white;
+	background:#ccc;
 	border:1px solid #ccc;
 	margin-top:8px;
 	border-radius: 20px;
@@ -116,7 +116,7 @@ section.produto-img{
 }
 
 .valor-pesquisa p{
-	color: white;
+	color: #DB1D45;
 	font-size: 15px;
 }
 
@@ -134,7 +134,7 @@ section.produto-img{
 
 .search2 h2{
 	font-size: 24px;
-	color: white;
+	color: #DB1D45;
 	font-weight: normal;
 }
 
@@ -150,7 +150,7 @@ section.produto-img{
 	width: 20px;
 	height: 20px;
 	display: inline-block;
-	border:1px solid #ccc;
+	border:1px solid #DB1D45;
 	border-radius: 3px;
 	vertical-align: top;
 	cursor: pointer;
@@ -163,7 +163,7 @@ section.produto-img{
 	height: 8px;
 	display: none;
 	border-radius: 4px;
-	background: white;
+	background:#DB1D45;
 	position: absolute;
 	left: 5px;
 	top: 5px;
@@ -175,7 +175,7 @@ section.produto-img{
 }
 
 .form-bolo-wraper span{
-	color: white;
+	color: #DB1D45;
 	padding:0 10px;
 	display: inline-block;
 	vertical-align: top;
@@ -195,14 +195,14 @@ section.produto-img{
 	float: left;
 	width: 33.3%;
 	text-align: left;
-	
 }
 
 .vitrine-destaque .bolo-img{
 	width: 100%;
     padding-top: 100%;
-    padding-left: 20px;
-	border:30px solid blueviolet;
+	padding-left: 20px;
+	border:30px solid rgb(200,200,200);
+	border-style: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -211,21 +211,20 @@ section.produto-img{
 
 .vitrine-destaque h2{
     padding-bottom: 10px;
-	padding-left: 8px;
-	color: white;
+	color: black;
 	font-style: italic;
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .btn1{
 	text-align: center;
 	display: block;
     line-height: 40px;
-    margin-left: 25px;
-	background-color: purple;
+    margin-left: 5px;
+	background-color: #DB1D45;
 	text-decoration: none;
-	border-bottom: 5px solid rebeccapurple;
+	border-bottom: 5px solid white;
 	color: white;
 	font-size: 16px;
 	font-style: italic;
@@ -236,3 +235,43 @@ section.produto-img{
 	color: black;
 }
 /*Fim banner-produtos*/
+
+@media screen and (max-width: 1100px){
+    header {
+        width: 100%;
+		height: auto;
+		max-width: 90vh;
+        min-height: 90vh;
+        padding: 40px 2%;
+	}
+
+	.vitrine-bolo .vitrine-destaque{
+		margin-top:0px;
+	}
+
+	section div.sidebar{
+		display: none;
+	}
+
+	section .produto-menu ul li{
+		font-size: 15px;
+		padding: 10px;
+	}
+
+	.vitrine-bolo{
+		float: none;
+		width: 100%;
+	}
+
+	.vitrine-destaque{
+		width: 100%;
+	}
+
+	section div.vitrine-destaque{
+		text-align: center;
+	}
+
+	.btn1{
+		margin-left: 33%;
+	}
+}

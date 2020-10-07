@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body, html {
     height: 100%;
+    width: 100%;
 }
 
 .clear{
@@ -26,8 +27,9 @@ body, html {
 div.menu-desktop{
     width: 100%;
     height: 100px;
-    background-color: rebeccapurple;
+    background-color: white;
     padding: 0 5%;
+    position: fixed;
 }
 
 nav.nav-desktop{
@@ -50,14 +52,11 @@ nav.nav-desktop ul li a{
 }
 
 .nav-desktop ul li a:hover{
-    color: white;
+    color: #DB1D45;
 }
 
 div.banner{
-    height: 13%;
-    background-image: url('../img/banner.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    height: 15%;
 }
 
 /*Começo intro*/
@@ -65,7 +64,7 @@ div.banner{
 section .intro{
     height: 100%;
     width: 100%;
-    background: rebeccapurple;
+    background: #DB1D45;
 }
 
 section div.flex{
@@ -76,7 +75,7 @@ section div.intro-text{
     width: 50%;
     text-align: center;
     justify-content: center;
-    margin-top: 70px;
+    padding-top: 40px;
 }
 
 section div.intro-text h2{
@@ -90,7 +89,7 @@ section div.intro-text h2{
 section div.intro-text p{
     color: white;
     padding: 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     font-weight: normal;
 }
@@ -98,16 +97,21 @@ section div.intro-text p{
 section div.intro-text input[type="submit"]{
     margin-top: 20px;
     padding: 4px 5%;
-    background-color: purple;
-    color: white;
+    background-color: white;
+    color:#DB1D45;
     border: none;
     font-size: 20px;
     cursor: pointer;
     border-radius: 7px;
+    font-weight: bold;
 }
 
 section div.intro-text input[type="submit"]:hover{
     color: black;
+}
+
+section div.intro-img{
+    margin-top: 30px;
 }
 
 /*Fim intro*/
@@ -119,8 +123,13 @@ section .intro-prod{
     background-color: white;
 }
 
+.intro-prod-img{
+    padding: 0 2%;
+}
+
 section .intro-prod .container{
     height: auto;
+    margin-top: 100px;
 }
 
 section div.intro-prod-text{
@@ -147,7 +156,7 @@ section div.intro-prod-text p{
 section div.intro-prod-text input[type=submit]{
     margin-top: 20px;
     padding: 4px 5%;
-    background-color: rebeccapurple;
+    background-color:  #DB1D45;
     color: white;
     border: none;
     font-size: 20px;
@@ -166,13 +175,13 @@ section div.intro-prod-text input[type=submit]:hover{
 section .intro-lancamento{
     height: 100%;
     width: 100%;
-    background-color: rebeccapurple;
+    background-color: #DB1D45;
 }
 
 section .intro-lancamento-text{
     width: 50%;
     padding: 2%;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 section .intro-lancamento-text h2{
@@ -188,6 +197,7 @@ section .intro-lancamento-text p{
     color: white;
     font-style: italic;
     font-size: 17px;
+    text-align: justify;
 }
 
 section .intro-lancamento-text input[type=submit]{
@@ -195,10 +205,11 @@ section .intro-lancamento-text input[type=submit]{
     margin-top: 20px;
     margin-left: 10px;
     text-transform: uppercase;
-    background-color: purple;
-    color: white;
+    background-color: white;
+    color: #DB1D45;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 section .intro-lancamento-text input[type=submit]:hover{
@@ -220,12 +231,13 @@ section .intro-franqueado{
 section .intro-franqueado-img{
     width: 50%;
     padding: 0 2%;
-    margin-top: 70px;
-    margin-left: 100px;
+    margin-top: 30px;
+    margin-left: 70px;
 }
 
 section .intro-franqueado-text p{
-    margin-top: 130px;
+    margin-top: 150px;
+    margin-left: 40px;
     font-size: 40px;
     font-style: italic;
     text-transform: uppercase;
@@ -235,9 +247,9 @@ section .intro-franqueado-text p{
 section .intro-franqueado-text input[type=submit]{
     padding: 7px 15%;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
     text-transform: uppercase;
-    background-color: rebeccapurple;
+    background-color: #DB1D45;
     color: white;
     border: none;
     cursor: pointer;
@@ -252,7 +264,7 @@ section .intro-franqueado-text input[type=submit]:hover{
 footer .intro-footer{
     width: 100%;
     height: 60px;
-    background-color: rebeccapurple;
+    background-color: #DB1D45;
 }
 
 footer .footer-text p{
@@ -264,3 +276,140 @@ footer .footer-text p{
 }
 
 /*Fim footer*/
+
+/*Inicio das Media Query*/
+@media screen and (max-width: 1200px){
+    nav.nav-desktop ul li a{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+    header {
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+
+    div.menu-mobile{
+        width: 100%;
+        height: auto;
+        padding: 10px 5%;
+        background: #DB1D45;
+    }
+
+    div.banner{
+        display: none;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    nav.nav-mobile{
+        cursor: pointer;
+        display: block;
+        width: 32px;
+        height: 32px;
+        padding: 20px;
+        background-image: url('../img/menu-button.png');
+        background-size: 100% 100%;
+    }
+
+    /* nav.nav-mobile:hover ul{
+        opacity: 1;
+    } */
+
+    nav.nav-mobile ul{
+        display: none;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 80px;
+        list-style-type: none;
+        text-align: center;
+        z-index: 998;
+    }
+
+    nav.nav-mobile ul li{
+        padding: 8px 0;
+        transition: 0.4s;
+        border-bottom: 1px solid black;
+    }
+
+    nav.nav-mobile ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    nav.nav-mobile ul li a:hover{
+        color: #DB1D45;
+    }
+
+    section div.intro-text{
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    section div.flex{
+        display: block;
+    }
+
+    div.intro-img{
+        display: none;
+    }
+
+    div.intro-prod-img{
+        display: none;
+    }
+
+    div.intro-lancamento-img{
+        display: none;
+    }
+
+    div.intro-franqueado-img{
+        display: none;
+    }
+
+    section div.intro-text{
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    section div.intro-prod-text{
+        width: 100%;
+        text-align: center;
+        padding: 0 2%;
+    }
+
+    section div.intro-lancamento-text{
+        width: 100%;
+        text-align: center;
+        padding: 3% 2%;
+    }
+
+    section div.intro-franqueado-text{
+        width: 100%;
+        text-align: center;
+        padding: 3% 2%;
+        margin: 0;
+    }
+
+    section .intro-franqueado-text p{
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 30px;
+        font-style: italic;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+
+    section .intro-franqueado-text input[type=submit]{
+        margin-left: 0px;
+    }
+}
