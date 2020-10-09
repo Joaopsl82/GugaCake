@@ -16,7 +16,7 @@
 <body>
     <div class="menu-desktop" style="z-index: 999;">
         <div class="container">
-            <div class="img"><img src="img/Logo.jpeg" style="width: 250px;float: left;margin-top: -62px;"></div>
+            <div class="img"><img src="img/Logo.jpeg" style="width: 250px;float: left;margin-top: -52px;"></div>
             <nav class="nav-desktop">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -66,61 +66,64 @@
                     <div class="content-produto">
                         <div class="container">
                         <div class="sidebar">
-                                <div class="search1">
-                                    <h2>Filtre por preço</h2>
-                                    <div class="barra-preco">
-                                        <div class="barra-preco-fill"></div><!--barra-preco-fill-->
-                                        <div class="pointer-barra"></div>
-                                    </div><!--barra-preco-->
-                                    <div class="valor-pesquisa">
-                                        <p>R$0,00</p>
-                                        <p>R$500,00</p>
-                                        <div class="clear"></div>
-                                    </div><!--valor-pesquisa-->
-                                </div><!--search1-->
-                
                                 <div class="search2">
                                     <h2>Filtre por sabor</h2>
                                     <form>
-                                    <div class="form-bolo-wraper">
-                                        <input type="checkbox" id="item1" />
+                                    <div class="form-bolo-wraper" category="all">
+                                        <input type="checkbox" id="item1"/>
                                         <label for="item1">
                                             <div class="circle"></div>
                                         </label><!--item-->
                                         <span>Todos os sabores</span>
-                                    </div><!--form-venda-wraper-->
+                                    </div><!--form-bolo-wraper-->
                 
                 
-                                    <div class="form-bolo-wraper">
+                                    <div class="form-bolo-wraper" category="chocolate">
                                         <input type="checkbox" id="item2" />
                                         <label for="item2">
                                             <div class="circle"></div>
                                         </label>
                                         <span>Chocolate</span>
-                                    </div><!--form-venda-wraper-->
+                                    </div><!--form-bolo-wraper-->
                 
                 
-                                    <div class="form-bolo-wraper">
+                                    <div class="form-bolo-wraper" category="morango">
                                         <input type="checkbox" id="item3" />
                                         <label for="item3">
                                             <div class="circle"></div>
                                         </label>
                                         <span>Morango</span>
-                                    </div><!--form-venda-wraper-->
+                                    </div><!--form-bolo-wraper-->
                 
-                                    <div class="form-bolo-wraper">
+                                    <div class="form-bolo-wraper" category="camafeu">
                                         <input type="checkbox" id="item4" />
                                         <label for="item4">
                                             <div class="circle"></div>
                                         </label>
                                         <span>Camafeu</span>
-                                    </div><!--form-venda-wraper-->
+                                    </div><!--form-bolo-wraper-->
+
+                                    <div class="form-bolo-wraper" category="maracuja">
+                                        <input type="checkbox" id="item5" />
+                                        <label for="item5">
+                                            <div class="circle"></div>
+                                        </label>
+                                        <span>Maracujá</span>
+                                    </div><!--form-bolo-wraper-->
+
+                                    <div class="form-bolo-wraper" category="trufado">
+                                        <input type="checkbox" id="item6" />
+                                        <label for="item6">
+                                            <div class="circle"></div>
+                                        </label>
+                                        <span>Trufado</span>
+                                    </div><!--form-bolo-wraper-->
                                     </form>
                                 </div><!--search2-->
                         </div><!--sidebar-->
                 
                 <div class="vitrine-bolo">
-                    <div class="vitrine-destaque">
+                    <div class="vitrine-destaque" category="morango">
                         <div style="background-image:url('img/boloMorango.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Chocolate com Morangos</h2>
@@ -129,7 +132,7 @@
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque">
+                    <div class="vitrine-destaque" category="chocolate">
                         <div style="background-image:url('img/bolo_chocolate_2.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Chocolate Belga</h2>
@@ -138,7 +141,7 @@
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque">
+                    <div class="vitrine-destaque" category="bemCasado">
                         <div style="background-image:url('img/bolo_bem_casado.png');" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Bem casado</h2>
@@ -147,7 +150,7 @@
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque">
+                    <div class="vitrine-destaque" category="camafeu">
                         <div style="background-image:url('img/bolo-camafeu.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Camafeu com Nozes</h2>
@@ -156,7 +159,7 @@
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque">
+                    <div class="vitrine-destaque" category="maracuja">
                         <div style="background-image:url('img/bolo-maracuja.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Maracujá</h2>
@@ -165,7 +168,7 @@
                         </div><!--info-carro-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque">
+                    <div class="vitrine-destaque" category="trufado">
                         <div style="background-image:url('img/bolo-trufado.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Trufado</h2>
@@ -200,5 +203,6 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/responsivo.js"></script>
+    <script src="js/filtragem.js"></script>
 </body>
 </html>
