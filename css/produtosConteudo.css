@@ -33,13 +33,13 @@ section .intro-produto-text{
 
 section .intro-produto-text h2{
     color: #DB1D45;
-    padding: 0 2%;
+    padding: 15px 2%;
     text-align: left;
     font-style: italic;
 }
 
 section .intro-produto-text p{
-    padding: 10px 2%;
+    padding: 20px 2%;
     color: black;
     font-style: italic;
     font-size: 17px;

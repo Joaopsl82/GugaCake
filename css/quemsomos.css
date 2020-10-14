@@ -19,6 +19,7 @@ body, html {
 
 section div.quemSomos{
     height: 100%;
+    padding: 5%;
     background-image: url('../img/quemSomos.jpg');
     background-size: 100%;
     background-position: center;
@@ -28,7 +29,7 @@ section div.quemSomos{
 section div.quemSomos-text p{
     text-align: justify;
     width: 50%;
-    padding: 70px 5% 50px 5%;
+    padding: 50px 5% 50px 5%;
     color: white;
 
 }
@@ -57,9 +58,9 @@ section div.produtosNaturais-text{
 section div.produtosNaturais-text h1{
     padding: 0 2%;
     text-align: right;
-    margin-right: 60px;
+    margin-right: 100px;
     color: #DB1D45;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 section div.produtosNaturais-text p{

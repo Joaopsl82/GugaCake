@@ -37,7 +37,8 @@ section .produto-menu h1{
     font-weight: normal;
     font-style: italic;
     padding: 10px;
-    color: black;
+	color: black;
+	font-weight: bold;
 }
 
 section .produto-menu ul li{
@@ -75,7 +76,7 @@ section.produto-img{
 
 .search2 h2{
 	font-size: 24px;
-	color: #DB1D45;
+	color: black;
 	font-weight: normal;
 }
 
@@ -141,7 +142,8 @@ section.produto-img{
 }
 
 .vitrine-destaque .bolo-img{
-	width: 100%;
+	width: 250px;
+	height: 250px;
     padding-top: 100%;
 	padding-left: 20px;
 	border:30px solid rgb(200,200,200);
@@ -163,15 +165,16 @@ section.produto-img{
 .btn1{
 	text-align: center;
 	display: block;
-    line-height: 40px;
-    margin-left: 5px;
+    line-height: 30px;
+	margin-left: 5px;
+	padding: 0 2%;
 	background-color: #DB1D45;
 	text-decoration: none;
 	border-bottom: 5px solid white;
 	color: white;
-	font-size: 16px;
+	font-size: 13px;
 	font-style: italic;
-	width: 150px;
+	width: 120px;
 }
 
 .btn1:hover{
