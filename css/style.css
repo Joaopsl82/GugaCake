@@ -321,6 +321,10 @@ footer .footer-text p{
         display: none;
     }
 
+    section div.intro{
+        height: 400px;
+    }
+
     nav.nav-mobile{
         display: block;
         cursor: pointer;
@@ -365,6 +369,10 @@ footer .footer-text p{
 
     section div.intro-text{
         padding: 2%;
+    }
+
+    section div.intro-prod{
+        margin-top: -40px;
     }
 
     section div.intro-prod-text input[type=submit]{
@@ -423,7 +431,7 @@ footer .footer-text p{
     section div.intro-lancamento-text{
         width: 100%;
         text-align: center;
-        padding: 3% 2%;
+        padding: 8% 5%;
     }
 
     section div.intro-franqueado-text{
