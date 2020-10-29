@@ -106,7 +106,7 @@ section div.form-contato form input[type=submit]{
     }
 
     section div.contato-text{
-        padding: 20px;
+        padding: 0px;
     }
 
     section div.contato-text h1{
@@ -114,13 +114,13 @@ section div.form-contato form input[type=submit]{
     }
 
     section div.form-contato form{
-        margin-right: 200px;
+        margin-right: 400px;
     }
 }
 
 @media screen and (max-width: 720px){
     section div.form-contato form{
         text-align: center;
-        margin-left: 0px;
+        margin-left: -50px;
     }
 }

@@ -393,6 +393,10 @@ footer .footer-text p{
         color: white;
         font-style: italic;
     }
+
+    section .intro-lancamento-text input[type=submit]{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -425,7 +429,7 @@ footer .footer-text p{
     section div.intro-prod-text{
         width: 100%;
         text-align: center;
-        padding: 0 2%;
+        padding: 0 5%;
     }
 
     section div.intro-lancamento-text{
@@ -452,5 +456,6 @@ footer .footer-text p{
 
     section .intro-franqueado-text input[type=submit]{
         margin-left: 0px;
+        font-size: 20px;
     }
 }

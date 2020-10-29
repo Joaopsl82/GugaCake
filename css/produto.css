@@ -216,7 +216,8 @@ section.produto-img{
 	}
 
 	section div.bolo-img{
-		margin-left: 110px;
+		margin-left: 70px;
+		padding: 20% 0;
 	}
 
 	section div.info-bolo{
@@ -225,6 +226,6 @@ section.produto-img{
 	}
 
 	.btn1{
-		margin-left: 170px;
+		margin-left: 120px;
 	}
 }
