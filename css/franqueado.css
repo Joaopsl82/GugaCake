@@ -178,7 +178,7 @@ section div.intro-img-franqueado{
 
     section div.intro-text-franqueado input[type="submit"]{
         margin-bottom: 20px;
-        margin-right: 0px;
+        margin-right: 20px;
         padding: 4px 5%;
         font-size: 20px;
     }
@@ -193,11 +193,11 @@ section div.intro-img-franqueado{
 
     section div.parcerias-text p{
         text-align: center;
-        margin-left: 70px;
+        margin-left: 75px;
     }
 
     section div.parcerias-img{
-        margin-left: 30%;
+        margin-left: 27%;
     }
 
     section div.banner-qualidades{

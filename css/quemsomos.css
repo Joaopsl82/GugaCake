@@ -203,7 +203,7 @@ section div.text-franqueado p{
     section div.produtosNaturais-text input[type=submit]{
         margin-top: 10px;
         margin-right: 115px;
-        padding: 4px 5%;
+        padding: 8px 5%;
         background-color: #DB1D45;
         color: white;
         border: none;
@@ -225,5 +225,13 @@ section div.text-franqueado p{
 
     section div.cadastro-text{
         padding: 0 2%;
+    }
+
+    section div.cadastro-button input[type=submit]{
+        font-size: 20px;
+    }
+
+    section div.franqueado{
+        height: 140px;
     }
 }

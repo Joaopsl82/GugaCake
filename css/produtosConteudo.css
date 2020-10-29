@@ -125,18 +125,18 @@ section .intro-produto-img{
     img.valor-nutricional-img{
 		width: 300px;
         height: 300px;
-        margin-left: 15%;
+        margin-left: 10%;
     }
     
     .dimensao-bolo{
         width: 350px;
         height: 350px;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .dimensao-bolo1{
         width: 350px;
         height: 300px;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 }
