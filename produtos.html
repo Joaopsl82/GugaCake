@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/produto.css">
     <link rel="icon" href="img/icone.jpeg">
+    <script src="js/jquery.js"></script>
+    <script src="js/responsivo.js"></script>
+    <script src="./js/produtos.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site informativo de bolos">
@@ -67,11 +71,11 @@
                         <div class="container">
                         <div class="sidebar">
                                 <div class="search2">
-                                    <h2>Filtre por Sabor</h2>
+                                    <h2>Escolha por Sabor</h2>
                                     <form>
                                     <div class="form-bolo-wraper" category="all">
-                                        <input type="checkbox" id="item1"/>
-                                        <label for="item1">
+                                        <input type="checkbox" id="all" checked>
+                                        <label for="all" onclick="cheque();chkAll();">
                                             <div class="circle"></div>
                                         </label><!--item-->
                                         <span>Todos os Sabores</span>
@@ -79,8 +83,8 @@
                 
                 
                                     <div class="form-bolo-wraper" category="chocolate">
-                                        <input type="checkbox" id="item2" />
-                                        <label for="item2">
+                                        <input type="checkbox" id="chocolate" />
+                                        <label for="chocolate" onclick="cheque();chkChocolate();">
                                             <div class="circle"></div>
                                         </label>
                                         <span>Chocolate</span>
@@ -88,32 +92,40 @@
                 
                 
                                     <div class="form-bolo-wraper" category="morango">
-                                        <input type="checkbox" id="item3" />
-                                        <label for="item3">
+                                        <input type="checkbox" id="morango">
+                                        <label for="morango" onclick="cheque();chkMorango();">
                                             <div class="circle"></div>
                                         </label>
                                         <span>Morango</span>
                                     </div><!--form-bolo-wraper-->
                 
                                     <div class="form-bolo-wraper" category="camafeu">
-                                        <input type="checkbox" id="item4" />
-                                        <label for="item4">
+                                        <input type="checkbox" id="camafeu" >
+                                        <label for="camafeu" onclick="cheque();chkCamafeu();">
                                             <div class="circle"></div>
                                         </label>
                                         <span>Camafeu</span>
                                     </div><!--form-bolo-wraper-->
 
+                                    <div class="form-bolo-wraper" category="camafeu">
+                                        <input type="checkbox" id="bem_casado" >
+                                        <label for="bem_casado" onclick="cheque();chkCasado();">
+                                            <div class="circle"></div>
+                                        </label>
+                                        <span>Bem casado</span>
+                                    </div><!--form-bolo-wraper-->
+
                                     <div class="form-bolo-wraper" category="maracuja">
-                                        <input type="checkbox" id="item5" />
-                                        <label for="item5">
+                                        <input type="checkbox" id="maracuja" >
+                                        <label for="maracuja" onclick="cheque();chkMaracuja();">
                                             <div class="circle"></div>
                                         </label>
                                         <span>Maracujá</span>
                                     </div><!--form-bolo-wraper-->
 
                                     <div class="form-bolo-wraper" category="trufado">
-                                        <input type="checkbox" id="item6" />
-                                        <label for="item6">
+                                        <input type="checkbox" id="trufado">
+                                        <label for="trufado" onclick="cheque();chkTrufado();">
                                             <div class="circle"></div>
                                         </label>
                                         <span>Trufado</span>
@@ -123,7 +135,7 @@
                         </div><!--sidebar-->
                 
                 <div class="vitrine-bolo">
-                    <div class="vitrine-destaque" category="morango">
+                    <div id="bolo_morango" class="vitrine-destaque" category="morango">
                         <div style="background-image:url('img/boloMorango.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Chocolate com Morangos</h2>
@@ -132,7 +144,7 @@
                         </div><!--info-bolo-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque" category="chocolate">
+                    <div id="bolo_chocolate" class="vitrine-destaque" category="chocolate">
                         <div style="background-image:url('img/bolo_chocolate_2.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Chocolate Belga</h2>
@@ -141,7 +153,7 @@
                         </div><!--info-bolo-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque" category="bemCasado">
+                    <div id="bolo_bem_casado" class="vitrine-destaque" category="bemCasado">
                         <div style="background-image:url('img/bolo_bem_casado.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Bem Casado</h2>
@@ -150,7 +162,7 @@
                         </div><!--info-bolo-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque" category="camafeu">
+                    <div id="bolo_camafeu" class="vitrine-destaque" category="camafeu">
                         <div style="background-image:url('img/bolo-camafeu.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Camafeu com Nozes</h2>
@@ -159,7 +171,7 @@
                         </div><!--info-bolo-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque" category="maracuja">
+                    <div id="bolo_maracuja" class="vitrine-destaque" category="maracuja">
                         <div style="background-image:url('img/bolo-maracuja.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Maracujá</h2>
@@ -168,7 +180,7 @@
                         </div><!--info-bolo-->
                     </div><!--vitrine-destaque-->
                 
-                    <div class="vitrine-destaque" category="trufado">
+                    <div id="bolo_trufado" class="vitrine-destaque" category="trufado">
                         <div style="background-image:url('img/bolo-trufado.png'); background-size: contain;" class="bolo-img"></div><!--bolo-img-->
                         <div class="info-bolo">
                             <h2>Trufado</h2>
@@ -201,8 +213,5 @@
         </div><!--intro-footer-->
     </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/responsivo.js"></script>
-    <script src="js/filtragem.js"></script>
 </body>
 </html>
